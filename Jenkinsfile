@@ -18,6 +18,11 @@ pipeline {
             steps {
                 checkout scm
             }
-        } 
+        }
+        stage('Build')
+            steps {
+                bat 'mvn -B -DskipTests clean package'
+            }
+        }    
     }
 }

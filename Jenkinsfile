@@ -6,15 +6,6 @@ pipeline {
                 checkout scm
             }
         }
-        stage('Test') { 
-            steps {
-                // 
-            }
-        }
-        stage('Deploy') { 
-            steps {
-                // 
-            }
-        }
+        
     }
 }

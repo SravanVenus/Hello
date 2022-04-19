@@ -1,5 +1,18 @@
 pipeline {
-    agent any 
+    agent any
+    tools {
+        maven 'maven_3.8.5'
+        jdk 'jdknew'
+    }
+    stages {
+        stage ('Initialize') {
+            steps {
+                sh '''
+                    echo "PATH = ${PATH}"
+                    echo "MAVEN_HOME = ${MAVEN_HOME}"
+                '''
+            }
+        }
     stages {
         stage('Checkout') { 
             steps {

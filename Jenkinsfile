@@ -11,14 +11,13 @@ pipeline {
                     echo "PATH = ${PATH}"
                     echo "MAVEN_HOME = ${MAVEN_HOME}"
                 '''
-            }
-        }
+           }
+       }
     stages {
         stage('Checkout') { 
             steps {
                 checkout scm
             }
         }
-        
     }
 }

@@ -19,5 +19,10 @@ pipeline {
                 checkout scm
             }
         }
+        stage('build') {
+            steps {
+                echo "Hello-World"
+            }
+        }
     }
 }

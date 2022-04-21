@@ -26,7 +26,7 @@ pipeline {
         }
         stage('upload to nexus')
             steps {
-                nexusArtifactUploader credentialsId: 'f34ad025-9e4d-488c-b741-b49e41cc950c', groupId: 'helloworld_sravan', nexusUrl: 'localhost:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'localhost:8081/repository/helloworld', version: '0.0.1'
+                nexusArtifactUploader credentialsId: 'f34ad025-9e4d-488c-b741-b49e41cc950c', groupId: 'helloworld_sravan', nexusUrl: '192.168.0.103:8081', nexusVersion: 'nexus3', protocol: 'http', repository: '192.168.0.103:8081/repository/helloworld', version: '0.0.1'
             }
         }
     }

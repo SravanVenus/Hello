@@ -33,7 +33,7 @@ pipeline {
                         file: 'C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\hello\\target\\helloworld-0.0.1-SNAPSHOT.jar',
                         type: 'jar'
                    ]
-               ],
+                ],
                credentialsId: 'f34ad025-9e4d-488c-b741-b49e41cc950c',
                groupId: 'helloworld_sravan',
                nexusUrl: 'localhost:8081',

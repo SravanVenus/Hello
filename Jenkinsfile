@@ -34,7 +34,7 @@ pipeline {
                     type: 'jar'
                       ]
                     ], 
-                    credentialsId: 'nexus3', 
+                    credentialsId: 'f34ad025-9e4d-488c-b741-b49e41cc950c', 
                     groupId: 'helloworld_sravan', 
                     nexusUrl: 'localhost:8081', 
                     nexusVersion: 'nexus3', 
